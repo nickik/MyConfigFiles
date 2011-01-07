@@ -1,0 +1,128 @@
+################################################################
+# URxvt Terminal
+################################################################
+# 2010-10-05
+# 2010-10-14 xterm-Konfiguration
+################################################################
+
+################################################################
+# urxvt - Gewöhnlich
+################################################################
+#    URxvt.scrollBar: false
+#    URxvt.saveLines: 1024
+#    URxvt.background: #000000
+#    URxvt.foreground: #FFFFFF
+#    URxvt.font: xft:Monospace:pixelsize=14:antialias=true
+#    URxvt.cursorBlink: true
+#    URxvt.geomery: 80x25
+#    #URxvt.geometry: 120x40
+#    URxvt*urlLauncher: firefox 
+#    
+#    # Tabs im Terminal
+#    #URxvt.perl-ext-common: default,tabbed
+#    #URxvt.tabbed.tabbar-fg: 2
+#    #URxvt.tabbed.tabbar-bg: 0
+#    #URxvt.tabbed.tab-fg: 2
+#    #URxvt.tabbed.tab-bg: 1
+
+################################################################
+# urxvt 
+# Vorlage: http://linux01.gwdg.de/~pbleser/files/dot.Xdefaults.txt
+################################################################
+
+URxvt.saveLines:          65535
+URxvt.utmpInhibit:        True
+URxvt.visualBell:         True
+URxvt.scrollBar:          False
+!URxvt.scrollBar:          True
+!URxvt.scrollTtyKeypress:  True
+!URxvt.scrollBar_floating: True
+!URxvt.scrollBar_right:    True
+!URxvt.scrollColor:        #888888
+!URxvt.scrollstyle:        plain
+!URxvt.geometry:           140x60
+URxvt.geometry:           110x30
+URxvt.jumpScroll:         false
+URxvt.font:               xft:DejaVu Sans Mono:pixelsize=13:antialias=true
+URxvt.internalBorder:     0
+URxvt.externalBorder:     0
+URxvt.borderColor:        #444444
+URxvt.meta8:              False
+URxvt.background:         #000000
+URxvt.foreground:         #eeeeee
+URxvt.loginShell:         true
+URxvt.cursorBlink:        true
+URxvt.inheritPixmap:      true
+URxvt.tintColor:          white
+URxvt.shading:            50
+!URxvt.fading:            40
+URxvt.cursorColor:        [70]#ff6600
+URxvt.skipBuiltinGlyphs:  true
+URxvt.cutchars:           BACKSLASH `"'()*,;<>@[]{â”‚}
+URxvt.urlLauncher:        xdg-open
+URxvt.perl-ext-common:    default,matcher,selection
+URxvt.matcher.button:     3
+URxvt.matcher.pattern.1:  \\b(mailto|http|https|ftp|file):[/]*[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+URxvt.matcher.rend.0:     Uline Bold fg8 bg1 
+URxvt.urgentOnBell:       true
+URxvt.mapAlert:           true
+! Blue
+URxvt*color4:             #00a7ff
+URxvt*color12:            #3988ff
+
+URxvt.background:     #121212
+!black
+URxvt.color0:         #353535
+URxvt.color8:         #666666
+!red
+URxvt.color1:         #AE4747
+URxvt.color9:         #EE6363
+!green
+URxvt.color2:         #556B2F
+URxvt.color10:        #9ACD32
+!brown/yellow
+URxvt.color3:         #DAA520
+URxvt.color11:        #FFC125
+!blue
+URxvt.color4:         #6F99B4
+URxvt.color12:        #7C96B0
+!magenta
+URxvt.color5:         #8B7B8B
+URxvt.color13:        #D8BFD8
+!cyan
+URxvt.color6:         #A7A15E
+URxvt.color14:        #F0E68C
+!white
+URxvt.color7:         #DDDDDD
+URxvt.color15:        #FFFFFF
+URxvt.foreground:     #DDDDDD
+
+URxvt*keysym.M-C-1:       command:\033]710;xft:DejaVu Sans Mono:pixelsize=9:antialias=true\007
+URxvt*keysym.M-C-2:       command:\033]710;xft:DejaVu Sans Mono:pixelsize=10:antialias=true\007
+URxvt*keysym.M-C-3:       command:\033]710;xft:DejaVu Sans Mono:pixelsize=11:antialias=true\007
+URxvt*keysym.M-C-4:       command:\033]710;xft:DejaVu Sans Mono:pixelsize=12:antialias=true\007
+URxvt*keysym.M-C-5:       command:\033]710;xft:DejaVu Sans Mono:pixelsize=14:antialias=true\007
+URxvt*keysym.M-C-6:       command:\033]710;xft:DejaVu Sans Mono:pixelsize=16:antialias=true\007
+URxvt*keysym.M-C-7:       command:\033]710;xft:DejaVu Sans Mono:pixelsize=20:antialias=true\007
+
+################################################################
+# xterm
+################################################################
+xterm*geometry:           80x25
+xterm*faceName:           terminusbold:pixelsize=25
+!xterm*font:             -*-dina-medium-r-*-*-16-*-*-*-*-*-*-*
+xterm*dynamicColors:      true
+xterm*utf8:               2
+xterm*eightBitInput:      true
+xterm*saveLines:          1024
+xterm*scrollTtyKeypress:  true
+xterm*scrollTtyOutput:    false
+xterm*scrollBar:          false
+!xterm*rightScrollBar:     true
+xterm*jumpScroll:         true
+xterm*multiScroll:        true
+xterm*toolBar:            false
+XTerm*background:         white
+XTerm*foreground:         black
+XTerm*highlightColor:     red
+
